@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Circustrein", "Circustrein\Circustrein.csproj", "{220B8C7D-C89D-4F1F-B48D-2081F37DD274}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "back-end1", "back-end1\back-end1.csproj", "{0AEFF0C5-C0EC-4E56-9330-F4AC7CC5E7B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "back-end1", "back-end1\back-end1.csproj", "{0AEFF0C5-C0EC-4E56-9330-F4AC7CC5E7B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circustrein.Test", "Circustrein.Test\Circustrein.Test.csproj", "{A98DAC81-ACC1-4745-96AF-2C97FAB56C36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0AEFF0C5-C0EC-4E56-9330-F4AC7CC5E7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AEFF0C5-C0EC-4E56-9330-F4AC7CC5E7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AEFF0C5-C0EC-4E56-9330-F4AC7CC5E7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A98DAC81-ACC1-4745-96AF-2C97FAB56C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98DAC81-ACC1-4745-96AF-2C97FAB56C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98DAC81-ACC1-4745-96AF-2C97FAB56C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98DAC81-ACC1-4745-96AF-2C97FAB56C36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

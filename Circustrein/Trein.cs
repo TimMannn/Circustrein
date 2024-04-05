@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Circustrein
 {
-    internal class Trein
+    public class Trein
     {
         int Reset = 0;
         bool Skip = false;
-        public int WagonPoints { get; set; }
+        private int WagonPoints { get; set; }
 
         public int WagonCount { get; set; }
 
@@ -24,12 +24,17 @@ namespace Circustrein
             WagonCount = _WagonCount;
         }
 
+        public Trein()
+        {
+            
+        }
+
         public Trein(Form1 form1)
         {
             this.form1 = form1;
         }
 
-        public void FillWagon(int NumberLargeMeat, int NumberMediumMeat, int NumberSmallMeat, int NumberLargePlants, int NumberMediumPlants, int NumberSmallPlants)
+        public void FillWagon(int NumberLargeMeat, int NumberMediumMeat, int NumberSmallMeat, int NumberLargePlants, int NumberMediumPlants, int NumberSmallPlants, Form1 form1)
         {
             form1.label3.Text = "LargeMeat: " + NumberLargeMeat.ToString();
             form1.label4.Text = "MediumMeat: " + NumberMediumMeat.ToString();

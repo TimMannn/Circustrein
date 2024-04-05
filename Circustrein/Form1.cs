@@ -16,10 +16,8 @@ namespace Circustrein
         int NumberLargePlants;
         int NumberMediumPlants;
         int NumberSmallPlants;
-        int WagonPoints;
-        int WagonCount = 0;
 
-        List<Dieren> dier = new List<Dieren>();
+        //List<Dieren> dier = new List<Dieren>();
 
         private void checkBoxSmall_CheckedChanged(object sender, EventArgs e)
         {
@@ -134,7 +132,7 @@ namespace Circustrein
                 NumberSmallPlants = Amount + NumberSmallPlants;
             }
         }
-
+/*
         void CreateAnimalList(int NumberLargeMeat, int NumberMediumMeat, int NumberSmallMeat, int NumberLargePlants, int NumberMediumPlants, int NumberSmallPlants)
         {
             for (int i = 0; i < NumberLargeMeat; i++)
@@ -167,12 +165,14 @@ namespace Circustrein
                 dier.Add(new Dieren(Dieren.SizeOptions.Small, Dieren.EatOptions.Plants));
             }
         }
+*/
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            CreateAnimalList(NumberLargeMeat, NumberMediumMeat, NumberSmallMeat, NumberLargePlants, NumberMediumPlants, NumberSmallPlants);
+            //CreateAnimalList(NumberLargeMeat, NumberMediumMeat, NumberSmallMeat, NumberLargePlants, NumberMediumPlants, NumberSmallPlants);
             Trein trein = new Trein(this);
-            trein.FillWagon(NumberLargeMeat, NumberMediumMeat, NumberSmallMeat, NumberLargePlants, NumberMediumPlants, NumberSmallPlants);
+            Form1 form1 = new Form1();
+            trein.FillWagon(NumberLargeMeat, NumberMediumMeat, NumberSmallMeat, NumberLargePlants, NumberMediumPlants, NumberSmallPlants, form1);
         }
     }
 }
